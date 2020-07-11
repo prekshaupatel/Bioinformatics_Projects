@@ -1,0 +1,5 @@
+Pneumonia Detector
+
+To run the code, download the data from <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia">kaggle</a> and save it in a data directory.
+
+```
