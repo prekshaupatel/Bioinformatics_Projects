@@ -32,7 +32,7 @@ def get_data(path, img_height, img_width, batch_size):
         seed=123,
         target_size=(img_height, img_width),
         batch_size= batch_size,
-        class_mode = "categorical",
+        class_mode = "binary",
         color_mode= "grayscale"
     )
     return raw_data
