@@ -19,3 +19,7 @@ Once you have the required libraries, run the code from the src folder.
 cd src
 python3 neural_network.py
 ```
+
+<h3>References</h3>
+
+* <a href="https://machinelearningmastery.com/pooling-layers-for-convolutional-neural-networks/">A Gentle Introduction to Pooling Layers for Convolutional Neural Networks</a>
