@@ -11,7 +11,7 @@ batch_size = 32
 num_classes = 2
 img_height = 256
 img_width = 256
-Epochs = 6
+Epochs = 30
 
 def main():
     support.set_environment()
@@ -34,7 +34,7 @@ def main():
         layers.Flatten(),
         layers.Dense(1024, activation='relu'),
         layers.Dropout(0.2),
-        layers.Dense(1, activation="sigmoid")
+        layers.Dense(1, activation='sigmoid')
     ])    
     
     model.compile(
