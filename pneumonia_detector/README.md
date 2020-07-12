@@ -10,19 +10,26 @@ To run the code, download the data from <a href="https://www.kaggle.com/paultimo
 To run the code, make sure you have installed TensorFlow (v2.2.0 or above). If not, run the following command on your commandline:
 
 ```
-pip install tensorflow
+$ pip install tensorflow
 ```
 
-Once you have the required libraries, run the code from the src folder.
+Once you have the required libraries, make sure you have the neccessary directories in your 'pneumonia_detector' directory. 
 
 ```
-cd src
-python3 neural_network.py
+$ ls
+README.md data  output  src
+$ ls data
+test  train val
 ```
 
-The code saves the output, including the test accuracy, in the 'output' directory. On an average, this code gives a test accuracy of 0.74.
+Once the environment is setup, run the code from the src folder. 
+
+```
+$ cd src
+$ python3 neural_network.py
+```
+
+The code saves the output, including the test accuracy and the corresponding analysis, in the 'output' directory. On an average, this code gives a test accuracy of 0.74.
 
 
-<h3>References</h3>
 
-* <a href="https://machinelearningmastery.com/pooling-layers-for-convolutional-neural-networks/">A Gentle Introduction to Pooling Layers for Convolutional Neural Networks</a>
