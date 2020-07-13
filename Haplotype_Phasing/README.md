@@ -30,7 +30,25 @@ $python code.py genotype.txt haplotype.txt
 ```
 
 Here the files are as follows:
-
 * phasing.py: the given code
 * genotype.txt: replace this with the name of the file containing your genotype data
 * haplotype.txt: replace this with the name of the file to which you want to output your results to. After you run the line of code, this file will contain the phased haplotypes.
+
+<h3>Switch Accuracy</h3>
+
+To evaluate the accuracy of the code, we compute **switch accuracy**.  
+
+```
+$ Rscript calculate_switch_accuracy.R predicted_haplotype_file true_haplotype_file
+```
+
+The accuracy and time efficiency are as follows:
+
+| File  | Switch Accuracy | Time (Approx.) |
+| ------ | ------ | ------- |
+| example_data_1_masked.txt | 0.84 | ~1 hr |
+| example_data_2_masked.txt | 0.86 | ~2 hr |
+| example_data_1_masked.txt | 0.86 | ~1 hr |
+
+
+
